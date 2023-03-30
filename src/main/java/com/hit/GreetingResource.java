@@ -30,7 +30,7 @@ public class GreetingResource {
     @Operation(summary = "Test error")
     @Produces(MediaType.APPLICATION_JSON)
 	@APIResponses(value = {
-			@APIResponse(responseCode = "400", description = "My custom error", content = @Content(schema = @Schema(implementation = MessageResponse.class )))
+			@APIResponse(responseCode = "400", description = "My custom error exception", content = @Content(schema = @Schema(implementation = MessageResponse.class )))
 			})
 	public Response error() {
     	// check MyApplicationExceptionHandler for more info
